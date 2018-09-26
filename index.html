@@ -1,10 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>for Z</title>
+    <title>for D</title>
+    <style type="text/css">
+        .content {
+            margin: 0 auto;
+            width: 525px;
+            height: 700px;
+            position: relative;
+            padding: 20px;
+        }
+
+        .content img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .gundong {
+            display: flex;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            font-family: 宋体, Arial Narrow;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: myfirst 6s infinite linear;
+        }
+
+        .content .gundong img {
+            width: 50px;
+            height: 37px;
+            padding: 10px;
+        }
+
+        @keyframes myfirst {
+            0% {
+                color: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+
+            25% {
+                color: yellow;
+                position: absolute;
+                top: 0;
+                left: 50px;
+                opacity: 1;
+            }
+
+            50% {
+                color: #fff;
+                position: absolute;
+                top: 0;
+                left: 150px;
+                opacity: 1;
+            }
+
+            75% {
+                color: blue;
+                position: absolute;
+                top: 0;
+                left: 200px;
+                opacity: 1;
+            }
+
+            100% {
+                color: black;
+                position: absolute;
+                top: 0;
+                left: 270px;
+                opacity: 0;
+            }
+        }
+
+        .zhufu {
+            display: flex;
+            position: absolute;
+            top: 43%;
+            left: 15%;
+            font-size: 60px;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        .zhufu p {
+            margin: 20px;
+            background: pink;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+        }
+
+        #s {
+            animation: s 15s infinite;
+        }
+
+        #r {
+            animation: r 15s infinite;
+        }
+
+        #k {
+            animation: k 15s infinite;
+        }
+
+        #l {
+            animation: l 15s infinite;
+        }
+
+        @keyframes s {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes r {
+            0% {
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes k {
+            0% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes l {
+            0% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 0;
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <p>hhhhhhhhhh</p>
+    <audio src="music/bgm.wav" type="audio/wav" autoplay="autoplay" loop="true" autostart="true"></audio>
+    <div class="content">
+        <img src="images/8.jpg" alt="背景">
+        <div class="gundong">
+            <p>代宝宝21岁了</p>
+            <img src="images/lihua.png" alt="礼花">
+        </div>
+        <div class="zhufu">
+            <p id="s">生</p>
+            <p id="r">日</p>
+            <p id="k">快</p>
+            <p id="l">乐</p>
+        </div>
+    </div>
 </body>
+
 </html>
